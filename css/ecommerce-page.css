@@ -161,6 +161,7 @@ i.fa-th-list {
 
 .products {
   margin-top: 40px;
+  display: flex;
 }
 
 .product {
@@ -212,6 +213,9 @@ i.fa-th-list {
 /* GRID VIEW STYLES */
 
 .grid.products {
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 4px;
 }
 
 .grid .product {
@@ -229,7 +233,11 @@ i.fa-th-list {
 
 .grid .product-info {
   text-align: center;
-  padding: 0 20px 30px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 250px;
 }
 
 .grid .product-action {
