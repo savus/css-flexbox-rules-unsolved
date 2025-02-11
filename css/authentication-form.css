@@ -26,7 +26,8 @@ p {
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
-.form-header {
+.form-header,
+form .row {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -59,13 +60,16 @@ a {
 }
 
 form .row {
-  display: flex;
-  flex-direction: column;
   gap: 6px;
 }
 
 label {
   font-weight: bold;
+}
+
+label[for="stay-signed-in"],
+.form-group-vertical-control label {
+  font-weight: normal;
 }
 
 input {
@@ -79,6 +83,13 @@ input[type="radio"] {
   width: max-content;
   height: max-content;
   padding: 0;
+}
+
+.form-checkbox-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 input[type="submit"] {
