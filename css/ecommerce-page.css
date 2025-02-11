@@ -243,6 +243,9 @@ i.fa-th-list {
 .grid .product-action {
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* LINE VIEW STYLES */
@@ -255,47 +258,61 @@ i.fa-th-list {
   display: flex;
 }
 
-.lines .product,
-.lines .product-info,
-.lines .product-action {
-  gap: 20px;
-}
-
 .lines.products,
-.lines .product-info,
-.lines .product-action {
+.lines .product-data,
+.lines .product-info {
   flex-direction: column;
 }
 
+.lines .product-data,
+.lines .product-info {
+  gap: 20px;
+}
+
 .lines .product {
-  padding: 20px;
+  gap: 10px;
 }
 
 .lines .product-image-wrapper {
   min-width: 300px;
   height: 200px;
+  padding: 10px;
 }
 
-.lines .product-data,
-.lines .product-action {
-  gap: 30px;
-}
-
-.lines .product-info {
-  border-right: 1px solid #8d8ba5;
-}
-
-.lines .product-info,
-.lines .product-action {
+.lines .product-data {
   justify-content: center;
+  padding-right: 20px;
+}
+
+.lines .product-action {
+  min-width: 200px;
+  gap: 10px;
 }
 
 /* LINES-ACTION VIEW */
 
-.lines-action.products {
+.lines-action.products,
+.lines-action .product,
+.lines-action .product-data,
+.lines-action .product-info,
+.lines-action .product-action {
+  display: flex;
+}
+
+.lines-action .product,
+.lines-action .product-info,
+.lines-action .product-action {
+  gap: 30px;
+}
+
+.lines-action.products,
+.lines-action .product-info,
+.lines-action .product-action {
+  flex-direction: column;
 }
 
 .lines-action .product {
+  padding: 20px;
 }
 
 .lines-action .product-image-wrapper {
@@ -303,14 +320,17 @@ i.fa-th-list {
   height: 200px;
 }
 
-.lines-action .product-data {
+.lines-action .product-info {
+  border-right: 1px solid #8d8ba5;
+  padding-right: 20px;
 }
 
-.lines-action .product-info {
+.lines-action .product-info,
+.lines-action .product-action {
+  justify-content: center;
 }
 
 .lines-action .product-action {
-  border-left: 1px solid #8d8ba5;
-  padding-left: 30px;
-  min-width: 200px;
+  padding: 30px 30px 30px 50px;
+  gap: 30px;
 }
