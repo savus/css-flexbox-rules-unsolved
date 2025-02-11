@@ -54,6 +54,10 @@ form {
   width: 100%;
 }
 
+#sign-in-form {
+  border: 1px solid black;
+}
+
 a {
   color: #335eea;
   text-decoration: none;
@@ -72,10 +76,36 @@ label[for="stay-signed-in"],
   font-weight: normal;
 }
 
-input {
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group-horizontal-control .form-input-control {
+  flex-grow: 1;
+}
+
+.form-group-horizontal-control select {
+  background-color: #fff;
+}
+
+input,
+.form-input-control select {
   width: 100%;
   height: 30px;
   padding: 5px;
+}
+
+input[type="text"] {
+  height: 30px;
 }
 
 input[type="checkbox"],
