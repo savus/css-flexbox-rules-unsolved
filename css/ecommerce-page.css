@@ -248,10 +248,14 @@ i.fa-th-list {
 /* LINE VIEW STYLES */
 
 .lines.products {
+  display: flex;
+  flex-direction: column;
 }
 
 .lines .product {
   padding: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .lines .product-image-wrapper {
@@ -260,14 +264,25 @@ i.fa-th-list {
 }
 
 .lines .product-data {
+  display: flex;
+  gap: 30px;
 }
 
 .lines .product-info {
+  border-right: 1px solid #8d8ba5;
+}
+
+.lines .product-info,
+.lines .product-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 .lines .product-action {
+  padding: 30px;
 }
-
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
