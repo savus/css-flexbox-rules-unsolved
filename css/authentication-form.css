@@ -12,6 +12,8 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  gap: 20px;
 }
 
 h2 {
@@ -24,9 +26,18 @@ p {
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .subtext {
@@ -36,12 +47,21 @@ form {
 
 #sign-in,
 #sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 100%;
 }
 
 a {
   color: #335eea;
   text-decoration: none;
+}
+
+form .row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 label {
